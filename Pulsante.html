@@ -1,0 +1,44 @@
+<head>
+    <link href="formattazione.css" rel="stylesheet" type="text/css">
+    <script src="genera_casuale.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" type="text/javascript"></script>
+
+</head>
+    
+    <body>
+        <h1 id="titolo_principale">BENVENUTI NEL PROGRAMMA GENERA COLORI</h1>
+        <button id="bottone0" onclick="selezionaElemento(); impostaColoreChiaro()">
+            GENERA COLORE CHIARO
+        </button>
+
+        <button id="bottone1" onclick="selezionaElemento(); impostaColoreScuro()">
+            GENERA COLORE SCURO
+        </button>
+        <!--GENERA CODICE RGB E' COMPOSTO DA TRE NUMERI : IL PRIMO NUMERO E' COMPOSTO DA 1, 2 O 3 CIFRE
+            IL SECONDO NUMERO E' COMPOSTO DA 1, 2 O 3 CIFRE. IL TERZO NUMERO E' COMPOSTO DA 1, 2 O 3 CIFRE
+            CIASCUN NUMERO E' SEPARATO DALL'ALTRO DA UNA VIRGOLA O PUNTO
+            --->
+        <button id="bottone2" onclick="genera_prima_parte_colore_RGB()">
+        GENERA PRIMA PARTE COLORE RGB
+        </button>
+        <button id="bottone3" onclick="genera_seconda_parte_colore_RGB()">
+            GENERA SECONDA PARTE COLORE RGB
+        </button>
+        <button id="bottone4" onclick="genera_terza_parte_colore_RGB()">
+            GENERA TERZA PARTE COLORE RGB
+        </button>
+
+        <input type="text" id="casella_testo0" disabled>
+        <input type="text" id="casella_testo1" disabled>
+        <input type="text" id="casella_testo2" disabled>
+
+        <button id="bottone5" onclick="concatena_numero_RGB(numero_casuale0, numero_casuale1, numero_casuale2)">
+            CONCATENA IL NUMERO
+        </button>
+
+        <button id="bottone6" onclick="conversione_RGB()">APPLICA COLORE</button>
+        <input type="text" id="casella_testo3" disabled>
+        <input type="text" id="casella_testo4" disabled>
+    </body>
+
+    <!--RENDERE UN LINK NON CLICCABILE style="pointer-events: none"-->
